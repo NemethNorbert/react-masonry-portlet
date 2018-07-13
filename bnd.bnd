@@ -1,0 +1,5 @@
+Bundle-Name: react-masonry-portlet
+Bundle-SymbolicName: com.liferay.react.portlet
+Bundle-Version: 1.0.0
+Web-ContextPath: /react-masonry-portlet
+-sources: true
