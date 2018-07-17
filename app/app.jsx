@@ -1,36 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Masonry from 'react-masonry-component';
 
-const elements =  [{src: "http://placehold.it/175x200"}, {src: "http://placehold.it/175x200"}, {src: "http://placehold.it/175x200"}];
-const masonryOptions = {
-  transitionDuration: 0
-};
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
+import Gallery from './Gallery.js';
+import data from './data.json';
+import shuffle from 'shuffle-array';
 
-class Gallery extends React.Component {
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
+const calculateWeight = (articles) => {
+  calculateMaxWeight(articles);
+  articles.map(article => {
+    article.weight = article.view / articles.weight * 4000;
+    article.articleContent = article.articleContent.slice(0, article.weight);
+  });
+}
+const calculateMaxWeight = (articles) => {
+  let x = 0;
+  articles.map(article => {
+    x = x + article.view
+  });
+  articles.weight = x;
+}
+class App extends Component {
+  componentWillMount() {
+    debugger;
+    calculateWeight(data);
+    shuffle(data);
+  }
   render() {
-      const childElements = elements.map(function(element){
-         return (
-              <li className="image-element-class">
-                  <img src={element.src} />
-              </li>
-          );
-      });
-  
-      return (
-          <Masonry
-              className={'my-gallery-class'} // default ''
-              elementType={'ul'} // default 'div'
-              options={masonryOptions} // default {}
-              disableImagesLoaded={false} // default false
-              updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-              imagesLoadedOptions={imagesLoadedOptions} // default {}
-          >
-              {childElements}
-          </Masonry>
-      );
+    return (
+      <div className="App">
+        <Gallery elements={data}/>
+      </div>
+    );
   }
 }
 
-ReactDOM.render(<Gallery />, document.getElementById('app'));
+
+ReactDOM.render(<App />, document.getElementById('app'));
