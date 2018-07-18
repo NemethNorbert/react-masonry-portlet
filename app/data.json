@@ -7,7 +7,7 @@
     "authorName": "Péter Borkuti",
     "authorUrl": "https://grow.liferay.com/web/peter.borkuti",
     "authorPic": "http://placehold.it/75",
-    "view": 100
+    "view": 250
   },
   {
     "articleId": "565146916519156449",
@@ -17,7 +17,7 @@
     "authorName": "Daniel Sanz",
     "authorUrl": "https://grow.liferay.com/web/daniel.sanz",
     "authorPic": "http://placehold.it/75",
-    "view": 200
+    "view": 290
   },
   {
     "articleId": "56514691647169136149",
@@ -27,7 +27,7 @@
     "authorName": "Nicole Mak",
     "authorUrl": "https://grow.liferay.com/web/nicole.mak",
     "authorPic": "http://placehold.it/75",
-    "view": 300
+    "view": 320
   },
   {
     "articleId": "565146917899136149",
@@ -37,7 +37,7 @@
     "authorName": "Zsolt Balogh",
     "authorUrl": "https://grow.liferay.com/web/zsolt.balogh",
     "authorPic": "http://placehold.it/75",
-    "view": 400
+    "view": 410
   },
   {
     "articleId": "565171468264698425149",
@@ -57,7 +57,7 @@
     "authorName": "Anna Rynkiewicz",
     "authorUrl": "https://grow.liferay.com/web/anna.rynkiewicz",
     "authorPic": "http://placehold.it/75",
-    "view": 600
+    "view": 550
   },
   {
     "articleId": "135146916519136149",
@@ -67,7 +67,7 @@
     "authorName": "Anna Rynkiewicz",
     "authorUrl": "https://grow.liferay.com/web/anna.rynkiewicz",
     "authorPic": "http://placehold.it/75",
-    "view": 700
+    "view": 600
   },
   {
     "articleId": "225146916519136149",
@@ -77,7 +77,7 @@
     "authorName": "Anna Rynkiewicz",
     "authorUrl": "https://grow.liferay.com/web/anna.rynkiewicz",
     "authorPic": "http://placehold.it/75",
-    "view": 800
+    "view":750
   },
   {
     "articleId": "165256816519136149",
@@ -87,7 +87,7 @@
     "authorName": "Anna Rynkiewicz",
     "authorUrl": "https://grow.liferay.com/web/anna.rynkiewicz",
     "authorPic": "http://placehold.it/75",
-    "view": 900
+    "view": 350
   },
   {
     "articleId": "915146916519136149",
@@ -97,7 +97,7 @@
     "authorName": "Anna Rynkiewicz",
     "authorUrl": "https://grow.liferay.com/web/anna.rynkiewicz",
     "authorPic": "http://placehold.it/75",
-    "view": 1000
+    "view": 680
   },
   {
     "articleId": "54565146916519136149",
@@ -107,6 +107,6 @@
     "authorName": "Tibor Lipusz",
     "authorUrl": "https://grow.liferay.com/web/tibor.lipusz",
     "authorPic": "http://placehold.it/75",
-    "view": 1100
+    "view": 420
   }
 ]

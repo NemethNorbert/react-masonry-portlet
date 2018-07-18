@@ -27,7 +27,7 @@ class App extends Component {
 
     this.calculateWeight = (articles) => {
       articles.map(article => {
-        article.weight = article.view / articles.weight * 4000;
+        article.weight = article.view / articles.weight * 2500;
         article.articleContent = article.articleContent.slice(0, article.weight);
       });
     }
