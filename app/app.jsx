@@ -6,8 +6,8 @@ import data from './data.json';
 import shuffle from 'shuffle-array';
 
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
+//Pagination infitie scrolling implementation, Scrolling sidebar to the mainpage, Design for the img-author-title, Content design, Refactor code
 const calculateWeight = (articles) => {
   calculateMaxWeight(articles);
   articles.map(article => {
@@ -24,13 +24,12 @@ const calculateMaxWeight = (articles) => {
 }
 class App extends Component {
   componentWillMount() {
-    debugger;
     calculateWeight(data);
     shuffle(data);
   }
   render() {
     return (
-      <div className="App">
+      <div className="rwp-App">
         <Gallery elements={data}/>
       </div>
     );
