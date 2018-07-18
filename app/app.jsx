@@ -8,29 +8,47 @@ import shuffle from 'shuffle-array';
 import './App.css';
 
 //Pagination infitie scrolling implementation, Scrolling sidebar to the mainpage, Design for the img-author-title, Content design, Refactor code
-const calculateWeight = (articles) => {
-  calculateMaxWeight(articles);
-  articles.map(article => {
-    article.weight = article.view / articles.weight * 4000;
-    article.articleContent = article.articleContent.slice(0, article.weight);
-  });
-}
-const calculateMaxWeight = (articles) => {
-  let x = 0;
-  articles.map(article => {
-    x = x + article.view
-  });
-  articles.weight = x;
-}
+
 class App extends Component {
-  componentWillMount() {
-    calculateWeight(data);
+  constructor(props){
+    super(props);
+    this.state = {
+      articles: [],
+    }
+
+    this.calculateMaxWeight = (articles) => {
+      let maxWeight = 0;
+
+      articles.map(article => {
+        maxWeight = maxWeight + article.view
+      });
+      articles.weight = maxWeight;
+    }
+
+    this.calculateWeight = (articles) => {
+      articles.map(article => {
+        article.weight = article.view / articles.weight * 4000;
+        article.articleContent = article.articleContent.slice(0, article.weight);
+      });
+    }
+  }
+
+  componentDidMount() {
+    this.calculateMaxWeight(data);
+
+    this.calculateWeight(data);
+
     shuffle(data);
+
+    this.setState({
+      articles: data
+    });
   }
   render() {
+    const { articles, } = this.state;
     return (
       <div className="rwp-App">
-        <Gallery elements={data}/>
+        <Gallery elements={articles}/>
       </div>
     );
   }
