@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Masonry from 'react-masonry-component';
 
-
 const masonryOptions = {
     transitionDuration: 1
 };
