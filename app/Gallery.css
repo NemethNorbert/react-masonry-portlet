@@ -1,0 +1,58 @@
+.rwp-article {
+    background-color: #fff;
+    -moz-box-shadow: 1px 2px 20px 1px #d3d3d3;
+    -webkit-box-shadow: 1px 2px 20px 1px #d3d3d3;
+    box-shadow: 1px 2px 20px 1px #d3d3d3;
+    -webkit-border-radius: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.rwp-profile {
+  margin-top: 2.2em;
+  position: relative;
+}
+.rwp-profile:after {
+  width: 100%;
+  height: 1px;
+  content: ' ';
+  display: block;
+  margin-top: 1.3em;
+  background: #e9eff6;
+}
+.rwp-profile .thumbnailPic {
+  width: 124px;
+  height: 124px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  border-radius: 100%;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .16);
+}
+.rwp-title {
+  color: #2d354a;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.rwp-name {
+  color: #7c8097;
+  font-size: 0.75em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.rwp-description {
+  color: #080911;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1.3em;
+  font-family: "Open Sans", sans-serif;
+}
