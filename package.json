@@ -29,6 +29,8 @@
   "dependencies": {
     "axios": "^0.16.2",
     "bootstrap": "^4.1.1",
+    "mime": "^1.4.1",
+    "no-case": "^2.3.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-masonry-component": "^6.2.1",
