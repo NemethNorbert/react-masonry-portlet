@@ -13,7 +13,6 @@ class Gallery extends Component {
   }
     render() {
       const childElements = this.props.elements.map(function(element){
-        debugger;
          return (
           <div key={element.articleId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div className="rwp-article">
