@@ -16,6 +16,7 @@ class Gallery extends Component {
          return (
           <div key={element.articleId} className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div className="rwp-article">
+            <p className="rwp-title">{element.articleTitle}</p>
               <div className="rwp-profile">
                 <img className="thumbnailPic" src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixlib=rb-0.3.5&s=9358d797b2e1370884aa51b0ab94f706&auto=format&fit=crop&w=200&q=80%20500w" />
               </div>
