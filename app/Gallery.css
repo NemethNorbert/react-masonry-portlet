@@ -9,7 +9,7 @@
     margin: 10px;
 }
 .rwp-profile {
-  margin-top: 2.2em;
+  /*margin-top: 2.2em;*/
   position: relative;
 }
 .rwp-profile:after {
@@ -21,8 +21,8 @@
   background: #e9eff6;
 }
 .rwp-profile .thumbnailPic {
-  width: 124px;
-  height: 124px;
+  width: 60px;
+  height: 60px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
