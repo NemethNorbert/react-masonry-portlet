@@ -22,7 +22,6 @@ class Gallery extends Component {
               </div>
               <h3 className="rwp-name">{element.authorName}</h3>
               <hr />
-              <p className="rwp-title">{element.articleTitle}</p>
               <p className="rwp-description">{element.articleContent}...</p>
             </div>
           </div>
