@@ -12,15 +12,16 @@
   /*margin-top: 2.2em;*/
   position: relative;
 }
-.rwp-profile:after {
+/*.rwp-profile:after {
   width: 100%;
   height: 1px;
   content: ' ';
   display: block;
   margin-top: 1.3em;
   background: #e9eff6;
-}
+}*/
 .rwp-profile .thumbnailPic {
+  float: left;
   width: 60px;
   height: 60px;
   display: flex;
