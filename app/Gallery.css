@@ -37,6 +37,7 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
+
 .rwp-name {
   color: #7c8097;
   font-size: 0.75em;
@@ -55,4 +56,9 @@
   text-align: left;
   margin-bottom: 1.3em;
   font-family: "Open Sans", sans-serif;
+}
+
+.rwp-readcount {
+  text-align: right;
+  font-size: 12px;
 }
