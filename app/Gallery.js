@@ -24,7 +24,7 @@ class Gallery extends Component {
                 <hr />
               </div>
               <p className="rwp-description">{element.articleContent}...</p>
-              <p className="rwp-readcount glyphicon glyphicon-eye-open">{element.view}</p>
+              <p className="rwp-readcount">👁 {element.view}</p>
             </div>
           </div>
           );
