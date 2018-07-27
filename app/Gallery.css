@@ -4,10 +4,16 @@
     -webkit-box-shadow: 1px 2px 20px 1px #d3d3d3;
     box-shadow: 1px 2px 20px 1px #d3d3d3;
     -webkit-border-radius: 0;
-    border-radius: 10px;
+    border-radius: 10px 20px;
     padding: 10px;
     margin: 10px;
+    transition: all .2s ease-in-out;
 }
+
+.rwp-article:hover {
+  transform: scale(1.05);
+}
+
 .rwp-profile {
   /*margin-top: 2.2em;*/
   position: relative;
