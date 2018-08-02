@@ -16,17 +16,9 @@
 }
 
 .rwp-profile {
-  /*margin-top: 2.2em;*/
   position: relative;
 }
-/*.rwp-profile:after {
-  width: 100%;
-  height: 1px;
-  content: ' ';
-  display: block;
-  margin-top: 1.3em;
-  background: #e9eff6;
-}*/
+
 .rwp-profile .thumbnailPic {
   float: left;
   width: 60px;
@@ -50,8 +42,7 @@
   font-size: 0.75em;
   font-weight: 300;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 0;
+  padding: 0.5em;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   line-height: 0;
