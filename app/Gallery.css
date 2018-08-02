@@ -59,4 +59,6 @@
 .rwp-readcount {
   text-align: right;
   font-size: 12px;
+  float: right;
+  line-height: 0px;
 }
