@@ -8,6 +8,7 @@
     padding: 20px;
     margin: 10px auto;
     transition: all .2s ease-in-out;
+    overflow: hidden;
 }
 
 .rwp-article:hover {
