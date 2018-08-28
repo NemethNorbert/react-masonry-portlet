@@ -39,8 +39,8 @@ class App extends Component {
     }
 
     this.onResize = () => {
-      clearTimeout(resizeId);
-      const resizeId = setTimeout(this.resizeRender, 100);
+      clearTimeout(resizeRender);
+      const resizeRender = setTimeout(this.resizeRender, 150);
     }
 
     this.resizeRender = () => {
