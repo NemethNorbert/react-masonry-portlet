@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 import Gallery from './Gallery.js';
 import data from './data.json';
 import shuffle from 'shuffle-array';
-import {ResizeListener} from "react-resize-listener";
+import ResizeAware from 'react-resize-aware';
+
+const axios = require('axios');
 
 import './App.css';
 
@@ -46,11 +48,10 @@ class App extends Component {
     }
 
     let pAuth = Liferay.authToken;
-    let url = "http://localhost:8080/api/jsonws/rec.recommendentity/get-top-most-viewed-ranomized/result-count/12/sample-count/300?p_auth=" + pAuth;
-    fetch(url)
-       .then(res => res.json())
-       .then(articles => {
-         this.setState({ articles: articles.topRecommendations});
+    let url = "/api/jsonws/rec.recommendentity/get-top-most-viewed-ranomized/result-count/12/sample-count/300?p_auth=" + pAuth;
+    axios.get(url)
+       .then(data => {
+         this.setState({ articles: data.data.topRecommendations});
 
          this.calculateMaxWeight();
 
@@ -61,10 +62,14 @@ class App extends Component {
   render() {
     const { articles, } = this.state;
     return (
-      <div className="rwp-App">
+      <ResizeAware
+          className="rwp-App"
+          style={{ position: 'relative' }}
+          onlyEvent
+          onResize={this.onResize}
+      >
         <Gallery elements={articles}/>
-        <ResizeListener onResize={this.onResize} />
-      </div>
+      </ResizeAware>
     );
   }
 }
