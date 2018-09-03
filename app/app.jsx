@@ -48,7 +48,7 @@ class App extends Component {
     }
 
     let pAuth = Liferay.authToken;
-    let url = "/api/jsonws/rec.recommendentity/get-top-most-viewed-ranomized/result-count/12/sample-count/300?p_auth=" + pAuth;
+    let url = "/api/jsonws/rec.recommendentity/get-top-most-viewed-ranomized/result-count/12/sample-count/200?p_auth=" + pAuth;
     axios.get(url)
        .then(data => {
          this.setState({ articles: data.data.topRecommendations});
