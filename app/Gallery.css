@@ -1,66 +1,61 @@
 .rwp-article {
-    background-color: #fff;
-    -moz-box-shadow: 1px 2px 20px 1px #d3d3d3;
-    -webkit-box-shadow: 1px 2px 20px 1px #d3d3d3;
-    box-shadow: 1px 2px 20px 1px #d3d3d3;
-    -webkit-border-radius: 0;
-    border-radius: 10px 20px;
-    padding: 20px;
-    margin: 10px auto;
-    transition: all .2s ease-in-out;
-    overflow: hidden;
+     background-color: #fff;
+     -moz-box-shadow: 1px 2px 20px 1px #d3d3d3;
+     -webkit-box-shadow: 1px 2px 20px 1px #d3d3d3;
+     box-shadow: 1px 2px 20px 1px #d3d3d3;
+     -webkit-border-radius: 0;
+     border-radius: 10px 20px;
+     padding: 20px;
+     margin: 10px auto;
+     transition: all .2s ease-in-out;
+     overflow: hidden;
 }
-
-.rwp-article:hover {
-  transform: scale(1.05);
-  background-color: #f2fbff;
+ .rwp-article:hover {
+     transform: scale(1.05);
+     background-color: #f2fbff;
 }
-
-.rwp-profile {
-  position: relative;
+ .rwp-profile {
+     position: relative;
 }
-
-.rwp-profile .thumbnailPic {
-  float: left;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  margin: 10px auto;
-  border-radius: 100%;
-  box-shadow: 0 13px 26px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .16);
-  background-size: cover;
-  background-position: center;
+ .rwp-profile .thumbnailPic {
+     float: left;
+     width: 60px;
+     height: 60px;
+     display: flex;
+     margin: 10px auto;
+     border-radius: 100%;
+     box-shadow: 0 13px 26px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .16);
+     background-size: cover;
+     background-position: center;
 }
-.rwp-title {
-  color: #2d354a;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
+ .rwp-title {
+     color: #2d354a;
+     font-size: 24px;
+     font-weight: 600;
+     text-align: center;
+     font-family: "Open Sans", sans-serif;
 }
-
-.rwp-name {
-  color: #7c8097;
-  font-size: 0.75em;
-  font-weight: 300;
-  text-align: center;
-  padding: 0.5em;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+ .rwp-name {
+     color: #7c8097;
+     font-size: 0.75em;
+     font-weight: 300;
+     text-align: center;
+     padding: 0.5em;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
 }
-.rwp-description {
-  color: #080911;
-  font-size: 14px;
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 1.3em;
-  font-family: "Open Sans", sans-serif;
+ .rwp-description {
+     color: #080911;
+     font-size: 14px;
+     font-weight: 300;
+     text-align: left;
+     margin-bottom: 1.3em;
+     font-family: "Open Sans", sans-serif;
 }
-
-.rwp-readcount {
-  text-align: right;
-  font-size: 12px;
-  float: right;
-  line-height: 0px;
-  top: 0px;
+ .rwp-readcount {
+     text-align: right;
+     font-size: 12px;
+     float: right;
+     line-height: 0px;
+     top: 0px;
 }
