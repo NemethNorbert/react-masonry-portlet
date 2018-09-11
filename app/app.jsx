@@ -10,8 +10,6 @@ const axios = require('axios');
 
 import './App.css';
 
-//Pagination infitie scrolling implementation, Scrolling sidebar to the mainpage, Design for the img-author-title, Content design, Refactor code
-
 class App extends Component {
   constructor(props){
     super(props);
@@ -29,9 +27,9 @@ class App extends Component {
     }
 
     this.calculateWeight = () => {
-        let articles = this.state.articles.slice(0);
-        articles.map(article => {
-        article.weight = article.viewCount / this.maxWeight * 3000;
+      let articles = this.state.articles.slice(0);
+      articles.map(article => {
+        article.weight = article.viewCount / this.maxWeight * 3000 - article.title.length / 20 * 30;
         article.contentSample = article.contentSample.slice(0, article.weight);
       });
       shuffle(articles);
